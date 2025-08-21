@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gletzer Julio Ivanees</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lush-merlot': '#730000',
+                        'satin-gold': '#C5A880',
+                        'dark-merlot': '#4A0000',
+                        'light-gold': '#D4B896'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'fade-in': 'fadeIn 0.8s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-lush-merlot via-dark-merlot to-black text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect animate-slide-up">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">Portofoli Gletzer</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-satin-gold transition-colors duration-300">Home</a>
+                    <a href="#about" class="hover:text-satin-gold transition-colors duration-300">About</a>
+                    <a href="#projects" class="hover:text-satin-gold transition-colors duration-300">Projects</a>
+                    <a href="#skills" class="hover:text-satin-gold transition-colors duration-300">Skills</a>
+                    <a href="#contact" class="hover:text-satin-gold transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <div class="w-6 h-0.5 bg-satin-gold mb-1"></div>
+                    <div class="w-6 h-0.5 bg-satin-gold mb-1"></div>
+                    <div class="w-6 h-0.5 bg-satin-gold"></div>
+                </button>
+            </div>
+            <div id="mobileMenu" class="md:hidden mt-4 space-y-4 hidden">
+                <a href="#home" class="block hover:text-satin-gold transition-colors duration-300">Home</a>
+                <a href="#about" class="block hover:text-satin-gold transition-colors duration-300">About</a>
+                <a href="#projects" class="block hover:text-satin-gold transition-colors duration-300">Projects</a>
+                <a href="#skills" class="block hover:text-satin-gold transition-colors duration-300">Skills</a>
+                <a href="#contact" class="block hover:text-satin-gold transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-satin-gold opacity-10 rounded-full animate-float"></div>
+            <div class="absolute bottom-40 right-32 w-24 h-24 bg-light-gold opacity-15 rounded-full animate-float"
+                style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-10 w-16 h-16 bg-satin-gold opacity-20 rounded-full animate-float"
+                style="animation-delay: 4s;"></div>
+        </div>
+
+        <div class="text-center z-10 animate-fade-in">
+            <div class="mb-8">
+                <div
+                    class="w-40 h-40 mx-auto bg-gradient-to-br from-satin-gold to-light-gold rounded-full flex items-center justify-center text-6xl font-bold text-lush-merlot animate-glow">
+                    <img src="Bidadari surga.jpg" alt="Profile Picture" class="rounded-full w-full h-full object-cover">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">Gletzer Julio Ivanees</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">Pemula</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects"
+                    class="px-8 py-3 bg-gradient-to-r from-satin-gold to-light-gold text-lush-merlot font-semibold rounded-full hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    View My Work
+                </a>
+                <a href="#contact"
+                    class="px-8 py-3 border-2 border-satin-gold text-satin-gold font-semibold rounded-full hover:bg-satin-gold hover:text-lush-merlot transition-all duration-300">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-satin-gold rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-satin-gold rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Seorang kreator yang punya passion besar di bidang teknologi, desain, dan pengembangan aplikasi.<br>
+                         Aktif ngoding dengan
+                        React.js, Laravel, dan selalu tertarik menggabungkan kreativitas dengan logika untuk menciptakan solusi digital yang
+                        bermanfaat. <br>
+                        
+                        Keahlian Utama
+                        
+                        Web Development (Laravel, React.js, Next.js)
+                        
+                        Desain UI/UX
+                        
+                        Editing & Multimedia
+                        
+                        Networking dasar (Mikrotik, VirtualBox)
+                        <br>
+                        Hobi & Minat
+                        Ngoding, desain, editing, koleksi komik, dan sebagainya.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        My journey in tech started with a curiosity about how beautiful websites are built, and it has
+                        evolved into a deep expertise in modern web technologies and user experience design.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span
+                            class="px-4 py-2 bg-satin-gold bg-opacity-20 border border-satin-gold rounded-full text-satin-gold">Frontend
+                            Development</span>
+                        <span
+                            class="px-4 py-2 bg-satin-gold bg-opacity-20 border border-satin-gold rounded-full text-satin-gold">UI/UX
+                            Design</span>
+                        <span
+                            class="px-4 py-2 bg-satin-gold bg-opacity-20 border border-satin-gold rounded-full text-satin-gold">Creative
+                            Coding</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="w-80 h-80 mx-auto bg-gradient-to-br from-satin-gold to-light-gold rounded-2xl relative overflow-hidden hover-lift">
+                        <div class="absolute inset-4 bg-lush-merlot rounded-xl flex items-center justify-center">
+                            <div class="text-6xl font-bold text-satin-gold">👨‍💻</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-black bg-opacity-30">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-effect rounded-2xl p-6 hover-lift group">
+                    <div
+                        class="w-full h-48 bg-gradient-to-br from-satin-gold to-light-gold rounded-xl mb-6 flex items-center justify-center text-4xl">
+                        🎨
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-satin-gold transition-colors duration-300">
+                        Creative Portfolio</h3>
+                    <p class="text-gray-300 mb-4">A stunning portfolio website with interactive animations and modern
+                        design principles.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">React</span>
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">Tailwind</span>
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">Framer Motion</span>
+                    </div>
+                    <button
+                        class="w-full py-2 border border-satin-gold text-satin-gold rounded-lg hover:bg-satin-gold hover:text-lush-merlot transition-all duration-300">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-effect rounded-2xl p-6 hover-lift group">
+                    <div
+                        class="w-full h-48 bg-gradient-to-br from-satin-gold to-light-gold rounded-xl mb-6 flex items-center justify-center text-4xl">
+                        🚀
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-satin-gold transition-colors duration-300">SaaS
+                        Dashboard</h3>
+                    <p class="text-gray-300 mb-4">Complete dashboard solution with real-time analytics and intuitive
+                        user interface.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">Vue.js</span>
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">MongoDB</span>
+                    </div>
+                    <button
+                        class="w-full py-2 border border-satin-gold text-satin-gold rounded-lg hover:bg-satin-gold hover:text-lush-merlot transition-all duration-300">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-effect rounded-2xl p-6 hover-lift group">
+                    <div
+                        class="w-full h-48 bg-gradient-to-br from-satin-gold to-light-gold rounded-xl mb-6 flex items-center justify-center text-4xl">
+                        📱
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-satin-gold transition-colors duration-300">Mobile
+                        App Design</h3>
+                    <p class="text-gray-300 mb-4">User-centered mobile app design with seamless user experience and
+                        modern aesthetics.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">Figma</span>
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">React Native</span>
+                        <span class="px-3 py-1 bg-lush-merlot text-xs rounded-full">TypeScript</span>
+                    </div>
+                    <button
+                        class="w-full py-2 border border-satin-gold text-satin-gold rounded-lg hover:bg-satin-gold hover:text-lush-merlot transition-all duration-300">
+                        View Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-satin-gold to-light-gold rounded-2xl flex items-center justify-center text-3xl text-lush-merlot group-hover:scale-110 transition-transform duration-300">
+                        💻
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Frontend Development</h3>
+                    <p class="text-gray-300">React, Vue, Angular, TypeScript</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-satin-gold to-light-gold rounded-2xl flex items-center justify-center text-3xl text-lush-merlot group-hover:scale-110 transition-transform duration-300">
+                        🎨
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-300">Figma, Adobe XD, Sketch</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-satin-gold to-light-gold rounded-2xl flex items-center justify-center text-3xl text-lush-merlot group-hover:scale-110 transition-transform duration-300">
+                        ⚙️
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Backend Development</h3>
+                    <p class="text-gray-300">Node.js, Python, PostgreSQL</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-satin-gold to-light-gold rounded-2xl flex items-center justify-center text-3xl text-lush-merlot group-hover:scale-110 transition-transform duration-300">
+                        ☁️
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cloud & DevOps</h3>
+                    <p class="text-gray-300">AWS, Docker, CI/CD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-black bg-opacity-30">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Let's Work Together</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-12 h-12 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot">
+                            📧
+                        </div>
+                        <div>
+                            <p class="font-semibold">Email</p>
+                            <p class="text-gray-300">john.doe@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-12 h-12 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot">
+                            📱
+                        </div>
+                        <div>
+                            <p class="font-semibold">Phone</p>
+                            <p class="text-gray-300">+62 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="w-12 h-12 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot">
+                            📍
+                        </div>
+                        <div>
+                            <p class="font-semibold">Location</p>
+                            <p class="text-gray-300">Samarinda, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Your Name"
+                        class="w-full p-4 bg-white bg-opacity-10 border border-satin-gold rounded-lg focus:outline-none focus:border-light-gold transition-colors duration-300"
+                        required>
+                    <input type="email" placeholder="Your Email"
+                        class="w-full p-4 bg-white bg-opacity-10 border border-satin-gold rounded-lg focus:outline-none focus:border-light-gold transition-colors duration-300"
+                        required>
+                    <textarea rows="5" placeholder="Your Message"
+                        class="w-full p-4 bg-white bg-opacity-10 border border-satin-gold rounded-lg focus:outline-none focus:border-light-gold transition-colors duration-300 resize-none"
+                        required></textarea>
+                    <button type="submit"
+                        class="w-full py-3 bg-gradient-to-r from-satin-gold to-light-gold text-lush-merlot font-semibold rounded-lg hover:scale-105 transition-all duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-satin-gold border-opacity-30">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#"
+                    class="w-10 h-10 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot hover:scale-110 transition-transform duration-300">
+                    💼
+                </a>
+                <a href="#"
+                    class="w-10 h-10 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot hover:scale-110 transition-transform duration-300">
+                    🐦
+                </a>
+                <a href="#"
+                    class="w-10 h-10 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot hover:scale-110 transition-transform duration-300">
+                    📷
+                </a>
+                <a href="#"
+                    class="w-10 h-10 bg-satin-gold rounded-full flex items-center justify-center text-lush-merlot hover:scale-110 transition-transform duration-300">
+                    🎬
+                </a>
+            </div>
+            <p class="text-gray-300">&copy; 2025 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
